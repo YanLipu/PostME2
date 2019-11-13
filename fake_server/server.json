@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "usuario": "joseyan",
+            "senha": "1234"
+        },
+        {
+            "usuario": "andersonkardek",
+            "senha": "1234"
+        }
+    ],
+    "chat": [],
+    "eventos": []
+}
