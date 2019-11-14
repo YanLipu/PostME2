@@ -70,7 +70,8 @@ import {
   QStepperNavigation,
   QLinearProgress,
   QUploader,
-  QSplitter
+  QSplitter,
+  QChatMessage
 } from 'quasar'
 
 Vue.use(Quasar, {
@@ -134,7 +135,8 @@ Vue.use(Quasar, {
     QStepperNavigation,
     QLinearProgress,
     QUploader,
-    QSplitter
+    QSplitter,
+    QChatMessage
   },
   directives: {
     Ripple,

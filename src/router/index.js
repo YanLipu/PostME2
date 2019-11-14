@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import Login from '../views/Login'
+import Atividades from '../views/Atividades'
 
 Vue.use(VueRouter)
 
@@ -17,8 +18,13 @@ const routes = [
     component: Login
   },
   {
+    path: '/atividades',
+    name: 'atividades',
+    component: Atividades
+  },
+  {
     path: '*',
-    redirect: '/'
+    redirect: '/login'
   }
 ]
 

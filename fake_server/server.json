@@ -1,14 +1,122 @@
 {
-    "users": [
-        {
-            "usuario": "joseyan",
-            "senha": "1234"
-        },
-        {
-            "usuario": "andersonkardek",
-            "senha": "1234"
-        }
-    ],
-    "chat": [],
-    "eventos": []
+  "users": [
+    {
+      "usuario": "joseyan",
+      "senha": "1234"
+    },
+    {
+      "usuario": "andersonkardek",
+      "senha": "1234"
+    }
+  ],
+  "chat": [
+    {
+      "user": "José Yan",
+      "message": "Olá Amigo!!",
+      "id": 1
+    },
+    {
+      "user": "joseyan",
+      "message": "Olá!",
+      "id": 2
+    },
+    {
+      "user": "joseyan",
+      "message": "Tudo bem?",
+      "id": 3
+    },
+    {
+      "user": "joseyan",
+      "message": "",
+      "id": 4
+    },
+    {
+      "user": "joseyan",
+      "message": "",
+      "id": 5
+    },
+    {
+      "user": "joseyan",
+      "message": "E ai mano",
+      "id": 6
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 7
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 8
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 9
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 10
+    },
+    {
+      "user": "joseyan",
+      "message": "dsa",
+      "id": 11
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 12
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 13
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 14
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 15
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 16
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 17
+    },
+    {
+      "user": "joseyan",
+      "message": "Otávio",
+      "id": 18
+    },
+    {
+      "user": "joseyan",
+      "message": "dsadsa",
+      "id": 19
+    },
+    {
+      "user": "joseyan",
+      "message": "das",
+      "id": 20
+    }
+  ],
+  "eventos": [
+    {
+      "nome": "Alguma Atividade",
+      "data": "20/10/2020",
+      "descricao": "Alguma descrição para esta atividade",
+      "id": 1
+    }
+  ]
 }

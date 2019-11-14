@@ -81,6 +81,7 @@ export default {
             if (res.data[0].usuario === this.email && res.data[0].senha === this.senha) {
                     localStorage.setItem('isLogged', true)
                     this.error = false
+                    this.$store.commit('quemSou', res.data[0])
                     setTimeout(() => {
                         this.dadosLogin.isLogged = false
                         this.$router.push('/home')
@@ -88,6 +89,7 @@ export default {
                 } else if (res.data[1].usuario === this.email && res.data[1].senha === this.senha) {
                     localStorage.setItem('isLogged', true)
                     this.error = false
+                    this.$store.commit('quemSou', res.data[1])
                     setTimeout(() => {
                         this.dadosLogin.isLogged = false
                         this.$router.push('/home')

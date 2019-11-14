@@ -4,26 +4,22 @@
       <div class="q-pa-md">
         <div class="row q-col-gutter-md">
           <div class="col-12 col-md-8">
-            <q-card style="height: 95vh">
+            <q-card style="min-height: 95vh">
               <q-card-section>
-                <q-btn label="Nova Atividade" icon="add" class="bg-blue-7 text-white"></q-btn>
-                <!-- <div class="text-h6">
-                  Atividades
-                </div>
-                
-              <div class="text-subtitle2">Lorem Ipsum ...</div> -->
+                <q-btn label="Nova Atividade" icon="add" clickable @click="$store.commit('OpenAtividade', true)" class="bg-blue-7 text-white"></q-btn>
+                <q-btn label="Sair" icon="logout" clickable @click="sair()" flat color="primary" style="float: right"></q-btn>
               </q-card-section>
 
               <q-card-section>
                 <atividades />
+                <nova-atividade />
               </q-card-section>
             </q-card>
           </div>
           <div class="col-12 col-md-4">
-            <q-card style="height: 95vh">
+            <q-card style="min-height: 95vh">
               <q-card-section>
                  <div class="text-h6">Chat</div>
-              <div class="text-subtitle2">Lorem Ipsum ...</div>
               </q-card-section>
 
               <q-card-section>
@@ -40,18 +36,23 @@
 <script>
 import chat from '@/components/chat'
 import atividades from '@/components/atividades'
+import novaAtividade from '@/components/nova-atividade'
 export default {
   name: 'home',
   components: {
     chat,
-    atividades
+    atividades,
+    novaAtividade
   },
-  data() {
-    return {
-      nome: '',
-      data: '',
-      descricao: ''
+  methods: {
+    sair() {
+      this.$store.commit('quemSou', {})
+      this.$router.push('/login')
+      localStorage.setItem('isLogged', false)
     }
+  },
+  mounted() {
+    this.$store.dispatch('getAtividades')
   }
 }
 </script>
